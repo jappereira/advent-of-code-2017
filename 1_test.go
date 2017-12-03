@@ -2,36 +2,36 @@ package main
 
 import "testing"
 
-func Test1(t *testing.T) {
-	result := compute1("1212")
+func TestMatchNumbers1(t *testing.T) {
+	result := matchNumbers("1212")
 	if result != 6 {
 		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 6)
 	}
 }
 
-func Test2(t *testing.T) {
-	result := compute1("1221")
+func TestMatchNumbers2(t *testing.T) {
+	result := matchNumbers("1221")
 	if result != 0 {
 		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 0)
 	}
 }
 
-func Test3(t *testing.T) {
-	result := compute1("123425")
+func TestMatchNumbers3(t *testing.T) {
+	result := matchNumbers("123425")
 	if result != 4 {
 		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 4)
 	}
 }
 
-func Test4(t *testing.T) {
-	result := compute1("123123")
+func TestMatchNumbers4(t *testing.T) {
+	result := matchNumbers("123123")
 	if result != 12 {
 		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 12)
 	}
 }
 
-func Test5(t *testing.T) {
-	result := compute1("12131415")
+func TestMatchNumbers5(t *testing.T) {
+	result := matchNumbers("12131415")
 	if result != 4 {
 		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 4)
 	}
